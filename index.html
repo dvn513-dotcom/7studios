@@ -99,6 +99,12 @@
 
     /* Footer styling */
     .footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,.06)}
+    
+    /* Docs cards */
+    .doc-card{padding:18px;display:flex;flex-direction:column;gap:10px}
+    .doc-card .doc-title{font-weight:700;margin:0}
+    .doc-card .doc-desc{color:var(--muted);margin:0}
+    .doc-actions{margin-top:auto}
   </style>
 </head>
 <body>
@@ -114,7 +120,7 @@
       <nav class="links">
         <a href="#downloads">Download</a>
         <a href="#screenshots">Screenshots</a>
-        <a href="#game">Our Game</a>
+        <a href="#docs">Documentation</a>
         <a href="#team">Our Team</a>
         <a href="#tutorial">Tutorial</a>
       </nav>
@@ -157,27 +163,55 @@
       </div>
     </section>
 
-    <!-- OUR GAME SECTION -->
-    <section id="game">
+    <!-- OUR DOCUMENTATION SECTION (replaces 'Our Game') -->
+    <section id="docs">
       <div class="section-title">
-        <h3>Our Game</h3>
+        <h3>Our Documentation</h3>
       </div>
+
+      <!-- Grid of documentation cards -->
       <div class="grid">
-        <!-- Cards detailing game/ game design -->
-        <div class="card feature">
-          <h3>Built by Students</h3>
-          <p>Our team is comprised of the finest students at York university so tuck in and enjoy the game</p>
+
+        <!-- Requirements Document -->
+        <div class="card doc-card">
+          <h4 class="doc-title">Requirements</h4>
+          <p class="doc-desc">Project requirements and user stories for the maze-based puzzle game.</p>
+          <div class="doc-actions">
+            <a class="btn" href="docs/requirements.pdf" download="requirements.pdf" aria-label="Download Requirements PDF">Download PDF</a>
+          </div>
         </div>
-        <div class="card feature">
-          <h3>Easy to Play</h3>
-          <p>This game is super easy to play and come to terms with</p>
+
+        <!-- Architecture Document -->
+        <div class="card doc-card">
+          <h4 class="doc-title">Architecture</h4>
+          <p class="doc-desc">System architecture, UML diagrams, and design rationale.</p>
+          <div class="doc-actions">
+            <a class="btn" href="docs/architecture.pdf" download="architecture.pdf" aria-label="Download Architecture PDF">Download PDF</a>
+          </div>
         </div>
-        <div class="card feature">
-          <h3>Player Focused</h3>
-          <p>Built for gamers by gamers — we’re here to make every session unforgettable.</p>
+
+        <!-- Method Selection and Planning Document -->
+        <div class="card doc-card">
+          <h4 class="doc-title">Method Selection and Planning</h4>
+          <p class="doc-desc">Development approach, sprint plans, and milestones.</p>
+          <div class="doc-actions">
+            <a class="btn" href="docs/method-selection-and-planning.pdf" download="method-selection-and-planning.pdf" aria-label="Download Method Selection and Planning PDF">Download PDF</a>
+          </div>
         </div>
+
+        <!-- Risk Assessment and Mitigation Document -->
+        <div class="card doc-card">
+          <h4 class="doc-title">Risk Assessment and Mitigation</h4>
+          <p class="doc-desc">Identified risks, impact analysis, and mitigation strategies.</p>
+          <div class="doc-actions">
+            <a class="btn" href="docs/risk-assessment-and-mitigation.pdf" download="risk-assessment-and-mitigation.pdf" aria-label="Download Risk Assessment and Mitigation PDF">Download PDF</a>
+          </div>
+        </div>
+
       </div>
+      <!-- End of documentation grid -->
     </section>
+
 
     <!-- TEAM SECTION -->
     <section id="team">
@@ -257,5 +291,7 @@
   </script>
 </body>
 </html>
+
+
 
 
